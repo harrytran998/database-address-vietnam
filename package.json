@@ -11,5 +11,65 @@
     "migrate:up": "npx sequelize-cli db:migrate",
     "seed:up": "npx sequelize-cli db:seed:all",
     "setupdb": "yarn migrate:up && yarn seed:up"
-  }
+  },
+  "dependencies": {
+    "pg-connection-string": "^2.1.0",
+    "pg-format": "^1.0.4",
+    "sequelize": "^5.9.2",
+    "morgan": "^1.9.1",
+    "helmet": "^3.18.0",
+    "express": "^4.17.1",
+    "dotenv": "^8.0.0",
+    "cors": "^2.8.5",
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-node8": "^1.2.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.0.2",
+    "nodemon": "^1.19.1",
+    "pg": "^7.11.0",
+    "prettier": "^1.18.2",
+    "sequelize-cli": "^5.5.0"
+  },
+  "babel": {
+    "presets": [
+      "node8"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "yarn lint --fix",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "node",
+    "express",
+    "sequelize",
+    "postgres",
+    "JWT",
+    "docker",
+    "jest",
+    "mocha"
+  ]
 }
