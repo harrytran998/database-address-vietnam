@@ -1,0 +1,15 @@
+{
+  "name": "database-provinces-districts-ward-vn-postgres",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jetaimefrc/Database-provinces-districts-ward-VN-postgres.git",
+  "author": "NhatDeepTrai <demonslight998@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec babel-node app.js",
+    "lint": "eslint . --ext .js,.ts,.tsx --ignore-path .gitignore",
+    "migrate:up": "npx sequelize-cli db:migrate",
+    "seed:up": "npx sequelize-cli db:seed:all",
+    "setupdb": "yarn migrate:up && yarn seed:up"
+  }
+}
