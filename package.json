@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .js,.ts,.tsx --ignore-path .gitignore",
     "migrate:up": "npx sequelize-cli db:migrate",
     "seed:up": "npx sequelize-cli db:seed:all",
-    "setupdb": "yarn migrate:up && yarn seed:up"
+    "setup-db-run": "yarn migrate:up && yarn seed:up && yarn dev"
   },
   "dependencies": {
     "pg-connection-string": "^2.1.0",
@@ -67,9 +67,10 @@
     "express",
     "sequelize",
     "postgres",
-    "JWT",
-    "docker",
-    "jest",
-    "mocha"
+    "database",
+    "districts",
+    "provinces",
+    "wards",
+    "vietnam"
   ]
 }
