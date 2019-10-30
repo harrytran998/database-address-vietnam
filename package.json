@@ -39,7 +39,7 @@
     "eslint-plugin-standard": "4.0.0",
     "husky": "3.0.3",
     "lint-staged": "9.2.1",
-    "nodemon": "1.19.1",
+    "nodemon": "1.19.4",
     "prettier": "1.18.2",
     "sequelize-cli": "5.5.0"
   },
