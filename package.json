@@ -15,7 +15,7 @@
   "dependencies": {
     "pg-connection-string": "^2.1.0",
     "pg-format": "^1.0.4",
-    "pg": "^7.11.0",
+    "pg": "^8.0.0",
     "sequelize": "^5.9.2",
     "morgan": "^1.9.1",
     "helmet": "^3.18.0",
