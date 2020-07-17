@@ -23,7 +23,7 @@
     "dotenv": "^8.0.0",
     "cors": "^2.8.5",
     "body-parser": "^1.19.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.19"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
